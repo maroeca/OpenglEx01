@@ -157,9 +157,9 @@ public class Triangle implements Scene {
 				0.5f, 0.2f,
 				0.5f, 0.2f,
 				-0.5f, 0.2f,
-				-0.35f, -0.5f,
-				-0.35f, -0.5f,
-				0.35f, -0.5f,
+				-0.35f, -0.6f,
+				-0.35f, -0.6f,
+				0.35f, -0.6f,
 				0.5f, 0.2f
 
 		};
