@@ -45,7 +45,7 @@ public class Window {
         glfwSetErrorCallback(errorCallback);
 
         // Initialize GLFW. Most GLFW functions will not work before doing this.
-        if (glfwInit() == 0)
+        if (glfwInit() != GLFW_TRUE)
             throw new IllegalStateException("Unable to initialize GLFW");
 
         // Configure our window
@@ -95,7 +95,7 @@ public class Window {
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
         long before = System.currentTimeMillis() - 1;
-        while (glfwWindowShouldClose(window) == 0) {
+        while (glfwWindowShouldClose(window) != GLFW_TRUE) {
             float time = (System.currentTimeMillis() - before) / 1000f;
             before = System.currentTimeMillis() - 1;
             scene.update(time);
